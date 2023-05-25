@@ -223,10 +223,10 @@
   # Set video resolution for boot options and for text setup.
   # PlatformDxe can set the former at runtime.
   #
-  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|800
-  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|600
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|640
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|480
+  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|1024
+  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|768
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|1024
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|768
 
   #
   # SMBIOS entry point version
