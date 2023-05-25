@@ -12,24 +12,27 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - name: Install gcc
+    - name: Install GCC
       run: sudo apt-get install gcc-arm-linux-gnueabihf 
       
-    - uses: actions/checkout@v3
+    - name: Checkout from GitHub
+      uses: actions/checkout@v3
 
-    - name: Setup Python
+    - name: Setup Python2 Env
       uses: actions/setup-python@v4.6.1
       with:
          python-version: 2.7
-    - name: step1
+         
+    - name: Build EDK2 Base Tools
       run: make -C BaseTools
-    - name: step2
+      
+    - name: Setup EDKII
       run: source edksetup.sh
 
-    - name: step3
+    - name: Prepare Build
       run: export GCC49_ARM_PREFIX=arm-linux-gnueabihf-
 
-    - name: step4
+    - name: Build EDK2 Firmware for Cortex-A9
       run:  export GCC49_ARM_PREFIX=arm-linux-gnueabihf-&& export SOURCE_DEBUG_ENABLE=TRUE && export DEBUG_ON_SERIAL_PORT && export WORKSPACE=/home/runner/work/edk2-winrt/edk2-winrt && export EDK_TOOLS_PATH=/home/runner/work/edk2-winrt/edk2-winrt/BaseTools && export CONF_PATH=/home/runner/work/edk2-winrt/edk2-winrt/Conf && cd ./BaseTools/BinWrappers/PosixLike && export PATH=$PATH:/home/runner/work/edk2-winrt/edk2-winrt/BaseTools/BinWrappers/PosixLike && ./build -a ARM -t GCC49 -b RELEASE -p ArmVirtPkg/ArmVirtQemuWinRt.dsc && cd ../../../
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.2
