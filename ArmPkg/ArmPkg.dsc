@@ -33,7 +33,7 @@
   XCODE:*_*_ARM_PLATFORM_FLAGS  == -arch armv7
   GCC:*_*_ARM_PLATFORM_FLAGS    == -march=armv7-a -mfpu=neon
   # We use A15 to get the Secure and Virtualization extensions
-  RVCT:*_*_ARM_PLATFORM_FLAGS  == --cpu Cortex-A15
+  RVCT:*_*_ARM_PLATFORM_FLAGS  == --cpu Cortex-A9
 
   RELEASE_*_*_CC_FLAGS  = -DMDEPKG_NDEBUG
 
