@@ -328,7 +328,7 @@
   SourceLevelDebugPkg/Library/DebugAgent/SmmDebugAgentLib.inf
   SourceLevelDebugPkg/Library/DebugCommunicationLibSerialPort/DebugCommunicationLibSerialPort.inf
   SourceLevelDebugPkg/Library/DebugCommunicationLibUsb/DebugCommunicationLibUsb.inf
-  SourceLevelDebugPkg/Library/DebugCommunicationLibUsb3/DebugCommunicationLibUsb3.inf
+  SourceLevelDebugPkg/Library/DebugCommunicationLibUsb3/DebugCommunicationLibUsb3Dxe.inf
 
   #
   # FAT filesystem + GPT/MBR partitioning
