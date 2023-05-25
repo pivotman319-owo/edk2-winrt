@@ -380,10 +380,11 @@
 
   #
   # SD/eMMC Support
+  # disabled for the time being, -hda handles our disk situation relatively well
   #
-  MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe.inf
-  MdeModulePkg/Bus/Sd/EmmcDxe/EmmcDxe.inf
-  MdeModulePkg/Bus/Sd/SdDxe/SdDxe.inf
+  # MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe.inf
+  # MdeModulePkg/Bus/Sd/EmmcDxe/EmmcDxe.inf
+  # MdeModulePkg/Bus/Sd/SdDxe/SdDxe.inf
 
   # NonDiscoverableDevices  
   ArmVirtPkg/VirtWinRtPlatformDxe/VirtWinRtPlatformDxe.inf

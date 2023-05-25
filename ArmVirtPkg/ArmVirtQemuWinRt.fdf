@@ -230,10 +230,11 @@ READ_LOCK_STATUS   = TRUE
 
   #
   # SD/eMMC Support
+  # disabled for the time being, -hda handles our disk situation relatively well
   #
-  INF MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe.inf
-  INF MdeModulePkg/Bus/Sd/EmmcDxe/EmmcDxe.inf
-  INF MdeModulePkg/Bus/Sd/SdDxe/SdDxe.inf
+  # INF MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe.inf
+  # INF MdeModulePkg/Bus/Sd/EmmcDxe/EmmcDxe.inf
+  # INF MdeModulePkg/Bus/Sd/SdDxe/SdDxe.inf
 
   # NonDiscoverableDevices
   INF ArmVirtPkg/VirtWinRtPlatformDxe/VirtWinRtPlatformDxe.inf

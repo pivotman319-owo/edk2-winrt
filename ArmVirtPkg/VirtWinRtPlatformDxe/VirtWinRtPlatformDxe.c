@@ -25,8 +25,8 @@ InitializeVirtWinRtPlatformDxe (
   EFI_STATUS                     Status;
   //UINTN                          EhciSize;
   //VOID*                          EhciBase;
-  UINTN                          SdHciSize;
-  VOID*                          SdHciBase;
+  //UINTN                          SdHciSize;
+  //VOID*                          SdHciBase;
 
   DEBUG ((DEBUG_INFO, "%a: InitializeVirtWinRtPlatformDxe called\n", __FUNCTION__));
 
@@ -54,6 +54,8 @@ InitializeVirtWinRtPlatformDxe (
   }
 */
 
+/*
+  // sdhci support can come at a much later time, for now hard drives via -hda arg will do
   SdHciBase = (VOID*)(UINTN)PcdGet32 (PcdPlatformSdHciBase);
   ASSERT (SdHciBase != NULL);
   SdHciSize = (UINTN)PcdGet32 (PcdPlatformSdHciSize);
@@ -75,6 +77,7 @@ InitializeVirtWinRtPlatformDxe (
             __FUNCTION__, SdHciBase, Status));
     return Status;
   }
+*/
 
   return EFI_SUCCESS;
 }
