@@ -35,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v3.1.2
       with:
         name: QEMU_EFI.fd
-        path: /home/runner/work/edk2-winrt/edk2-winrt/Build/ArmVirtQemuWinRt-ARM/RELEASE_GCC49/FVQEMU_EFI
+        path: /home/runner/work/edk2-winrt/edk2-winrt/Build/ArmVirtQemuWinRt-ARM/RELEASE_GCC49/FV/QEMU_EFI
