@@ -171,7 +171,7 @@ READ_LOCK_STATUS   = TRUE
   INF SourceLevelDebugPkg/Library/DebugAgent/SmmDebugAgentLib.inf
   INF SourceLevelDebugPkg/Library/DebugCommunicationLibSerialPort/DebugCommunicationLibSerialPort.inf
   INF SourceLevelDebugPkg/Library/DebugCommunicationLibUsb/DebugCommunicationLibUsb.inf
-  INF SourceLevelDebugPkg/Library/DebugCommunicationLibUsb3/DebugCommunicationLibUsb3.inf
+  INF SourceLevelDebugPkg/Library/DebugCommunicationLibUsb3/DebugCommunicationLibUsb3Dxe.inf
 
   #
   # UEFI application (Shell Embedded Boot Loader)
