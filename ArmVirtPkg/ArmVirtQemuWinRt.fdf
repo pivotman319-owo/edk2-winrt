@@ -164,14 +164,14 @@ READ_LOCK_STATUS   = TRUE
   #
   # debuggers for UDK
   #
-  INF SourceLevelDebugPkg/DebugAgentDxe/DebugAgentDxe.inf
-  INF SourceLevelDebugPkg/DebugAgentPei/DebugAgentPei.inf
-  INF SourceLevelDebugPkg/Library/DebugAgent/DxeDebugAgentLib.inf
-  INF SourceLevelDebugPkg/Library/DebugAgent/SecPeiDebugAgentLib.inf
-  INF SourceLevelDebugPkg/Library/DebugAgent/SmmDebugAgentLib.inf
-  INF SourceLevelDebugPkg/Library/DebugCommunicationLibSerialPort/DebugCommunicationLibSerialPort.inf
-  INF SourceLevelDebugPkg/Library/DebugCommunicationLibUsb/DebugCommunicationLibUsb.inf
-  INF SourceLevelDebugPkg/Library/DebugCommunicationLibUsb3/DebugCommunicationLibUsb3Dxe.inf
+  #INF SourceLevelDebugPkg/DebugAgentDxe/DebugAgentDxe.inf
+  #INF SourceLevelDebugPkg/DebugAgentPei/DebugAgentPei.inf
+  #INF SourceLevelDebugPkg/Library/DebugAgent/DxeDebugAgentLib.inf
+  #INF SourceLevelDebugPkg/Library/DebugAgent/SecPeiDebugAgentLib.inf
+  #INF SourceLevelDebugPkg/Library/DebugAgent/SmmDebugAgentLib.inf
+  #INF SourceLevelDebugPkg/Library/DebugCommunicationLibSerialPort/DebugCommunicationLibSerialPort.inf
+  #INF SourceLevelDebugPkg/Library/DebugCommunicationLibUsb/DebugCommunicationLibUsb.inf
+  #INF SourceLevelDebugPkg/Library/DebugCommunicationLibUsb3/DebugCommunicationLibUsb3Dxe.inf
 
   #
   # UEFI application (Shell Embedded Boot Loader)

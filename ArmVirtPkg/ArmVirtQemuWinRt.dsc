@@ -321,14 +321,14 @@
   #
   # debuggers for UDK
   #
-  SourceLevelDebugPkg/DebugAgentDxe/DebugAgentDxe.inf
-  SourceLevelDebugPkg/DebugAgentPei/DebugAgentPei.inf
-  SourceLevelDebugPkg/Library/DebugAgent/DxeDebugAgentLib.inf
-  SourceLevelDebugPkg/Library/DebugAgent/SecPeiDebugAgentLib.inf
-  SourceLevelDebugPkg/Library/DebugAgent/SmmDebugAgentLib.inf
-  SourceLevelDebugPkg/Library/DebugCommunicationLibSerialPort/DebugCommunicationLibSerialPort.inf
-  SourceLevelDebugPkg/Library/DebugCommunicationLibUsb/DebugCommunicationLibUsb.inf
-  SourceLevelDebugPkg/Library/DebugCommunicationLibUsb3/DebugCommunicationLibUsb3Dxe.inf
+  #SourceLevelDebugPkg/DebugAgentDxe/DebugAgentDxe.inf
+  #SourceLevelDebugPkg/DebugAgentPei/DebugAgentPei.inf
+  #SourceLevelDebugPkg/Library/DebugAgent/DxeDebugAgentLib.inf
+  #SourceLevelDebugPkg/Library/DebugAgent/SecPeiDebugAgentLib.inf
+  #SourceLevelDebugPkg/Library/DebugAgent/SmmDebugAgentLib.inf
+  #SourceLevelDebugPkg/Library/DebugCommunicationLibSerialPort/DebugCommunicationLibSerialPort.inf
+  #SourceLevelDebugPkg/Library/DebugCommunicationLibUsb/DebugCommunicationLibUsb.inf
+  #SourceLevelDebugPkg/Library/DebugCommunicationLibUsb3/DebugCommunicationLibUsb3Dxe.inf
 
   #
   # FAT filesystem + GPT/MBR partitioning
