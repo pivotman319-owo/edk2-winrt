@@ -1,0 +1,27 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ "winrt" ]
+  pull_request:
+    branches: [ "winrt" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: step1
+      run: make -C BaseTools
+      
+    - name: step2
+      run: source edksetup.sh
+
+    - name: step3
+      run: export GCC49_ARM_PREFIX=arm-linux-gnueabihf-
+
+    - name: step4
+      run: build -a ARM -t GCC49 -b RELEASE -p ArmVirtPkg/ArmVirtQemuWinRt.dsc
