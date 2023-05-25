@@ -223,7 +223,7 @@ READ_LOCK_STATUS   = TRUE
   #
   # USB Support
   #
-  INF MdeModulePkg/Bus/Pci/UhciDxe/UhciDxe.inf
+  # INF MdeModulePkg/Bus/Pci/UhciDxe/UhciDxe.inf
   # INF MdeModulePkg/Bus/Pci/EhciDxe/EhciDxe.inf
   INF MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe.inf
   INF MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf
@@ -232,7 +232,7 @@ READ_LOCK_STATUS   = TRUE
 
 
   #
-  # TianoCore logo (splash screen)
+  # Cat bitmap logo (real)
   #
   FILE FREEFORM = PCD(gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdLogoFile) {
     SECTION RAW = MdeModulePkg/Logo/Logo.bmp
@@ -240,7 +240,7 @@ READ_LOCK_STATUS   = TRUE
 
 !if $(ARCH) == ARM
   INF MdeModulePkg/Universal/FvSimpleFileSystemDxe/FvSimpleFileSystemDxe.inf
-  INF ArmPkg/Application/LinuxLoader/LinuxLoader.inf
+  # INF ArmPkg/Application/LinuxLoader/LinuxLoader.inf
 !endif
 
 [FV.FVMAIN_COMPACT]

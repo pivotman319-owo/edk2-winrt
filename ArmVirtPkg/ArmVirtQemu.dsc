@@ -362,7 +362,7 @@
   #
   # USB Support
   #
-  MdeModulePkg/Bus/Pci/UhciDxe/UhciDxe.inf
+  # MdeModulePkg/Bus/Pci/UhciDxe/UhciDxe.inf
   # MdeModulePkg/Bus/Pci/EhciDxe/EhciDxe.inf
   MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe.inf
   MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf
@@ -376,7 +376,7 @@
   # invoke it from the shell.
   #
   MdeModulePkg/Universal/FvSimpleFileSystemDxe/FvSimpleFileSystemDxe.inf
-  ArmPkg/Application/LinuxLoader/LinuxLoader.inf {
-    <LibraryClasses>
-      BdsLib|ArmPkg/Library/BdsLib/BdsLib.inf
-  }
+  # ArmPkg/Application/LinuxLoader/LinuxLoader.inf {
+  #   <LibraryClasses>
+  #     BdsLib|ArmPkg/Library/BdsLib/BdsLib.inf
+  # }

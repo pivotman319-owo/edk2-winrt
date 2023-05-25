@@ -29,6 +29,7 @@
 
 [Binaries]
   BIN|Logo.bmp|*
+  BIN|WDPLOGO.bmp|*
 
 [UserExtensions.TianoCore."ExtraFiles"]
   LogoExtra.uni
