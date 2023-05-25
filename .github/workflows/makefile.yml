@@ -2,11 +2,11 @@ name: Makefile CI
 
 on:
   push:
-    branches: [ "winrt" ]
+    branches: [ "cortex-a15-ehcifail" ]
   pull_request:
-    branches: [ "winrt" ]
+    branches: [ "cortex-a15-ehcifail" ]
 
-jobs:
+jobs: 
   build:
 
     runs-on: ubuntu-20.04
@@ -35,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v3.1.2
       with:
         name: QEMU_EFI.fd
-        path: /home/runner/work/edk2-winrt/edk2-winrt/Build/ArmVirtQemuWinRt-ARM/RELEASE_GCC49/FV/QEMU_EFI
+        path: ./Build/ArmVirtQemuWinRt-ARM/RELEASE_GCC49/FV/QEMU_EFI.fd
