@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ "winrt" ]
 
-jobs: 
+jobs:
   build:
 
     runs-on: ubuntu-20.04
