@@ -23,13 +23,14 @@ InitializeVirtWinRtPlatformDxe (
   )
 {
   EFI_STATUS                     Status;
-  UINTN                          EhciSize;
-  VOID*                          EhciBase;
+  //UINTN                          EhciSize;
+  //VOID*                          EhciBase;
   UINTN                          SdHciSize;
   VOID*                          SdHciBase;
 
   DEBUG ((DEBUG_INFO, "%a: InitializeVirtWinRtPlatformDxe called\n", __FUNCTION__));
 
+/*
   EhciBase = (VOID*)(UINTN)PcdGet32 (PcdPlatformEhciBase);
   ASSERT (EhciBase != NULL);
   EhciSize = (UINTN)PcdGet32 (PcdPlatformEhciSize);
@@ -51,6 +52,7 @@ InitializeVirtWinRtPlatformDxe (
             __FUNCTION__, EhciBase, Status));
     return Status;
   }
+*/
 
   SdHciBase = (VOID*)(UINTN)PcdGet32 (PcdPlatformSdHciBase);
   ASSERT (SdHciBase != NULL);
