@@ -165,7 +165,7 @@ READ_LOCK_STATUS   = TRUE
   # debuggers for UDK
   #
   INF SourceLevelDebugPkg/DebugAgentDxe/DebugAgentDxe.inf
-  INF SourceLevelDebugPkg/DebugAgentDxe/DebugAgentPei.inf
+  INF SourceLevelDebugPkg/DebugAgentPei/DebugAgentPei.inf
   INF SourceLevelDebugPkg/Library/DebugAgent/DxeDebugAgentLib.inf
   INF SourceLevelDebugPkg/Library/DebugAgent/SecPeiDebugAgentLib.inf
   INF SourceLevelDebugPkg/Library/DebugAgent/SmmDebugAgentLib.inf

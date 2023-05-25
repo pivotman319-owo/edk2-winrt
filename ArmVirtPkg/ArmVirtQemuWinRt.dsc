@@ -322,7 +322,7 @@
   # debuggers for UDK
   #
   SourceLevelDebugPkg/DebugAgentDxe/DebugAgentDxe.inf
-  SourceLevelDebugPkg/DebugAgentDxe/DebugAgentPei.inf
+  SourceLevelDebugPkg/DebugAgentPei/DebugAgentPei.inf
   SourceLevelDebugPkg/Library/DebugAgent/DxeDebugAgentLib.inf
   SourceLevelDebugPkg/Library/DebugAgent/SecPeiDebugAgentLib.inf
   SourceLevelDebugPkg/Library/DebugAgent/SmmDebugAgentLib.inf
