@@ -168,8 +168,8 @@
   #
   # PlatformDevices
   #
-  gArmVirtWinRtTokenSpaceGuid.PcdPlatformEhciBase|0x090c0000
-  gArmVirtWinRtTokenSpaceGuid.PcdPlatformEhciSize|0x00020000
+  gArmVirtWinRtTokenSpaceGuid.PcdPlatformEhciBase|0x4f000000
+  gArmVirtWinRtTokenSpaceGuid.PcdPlatformEhciSize|0x00010000
   gArmVirtWinRtTokenSpaceGuid.PcdPlatformSdHciBase|0x090d0000
   gArmVirtWinRtTokenSpaceGuid.PcdPlatformSdHciSize|0x00010000
   
