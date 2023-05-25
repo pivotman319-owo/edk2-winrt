@@ -91,9 +91,7 @@ class BaseToolsTest(unittest.TestCase):
             os.remove(path)
 
     def DisplayBinaryData(self, description, data):
-        print description, '(base64 encoded):'
         b64data = base64.b64encode(data)
-        print b64data
 
     def DisplayFile(self, fileName):
         sys.stdout.write(self.ReadTmpFile(fileName))
