@@ -12,8 +12,11 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
+    - name: apt-get update
+      run: sudo apt-get update
+      
     - name: Install GCC
-      run: sudo apt-get install gcc-arm-linux-gnueabihf 
+      run: sudo apt-get install gcc-arm-linux-gnueabihf
       
     - name: Checkout from GitHub
       uses: actions/checkout@v3
