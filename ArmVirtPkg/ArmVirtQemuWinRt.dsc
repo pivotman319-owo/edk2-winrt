@@ -168,6 +168,8 @@
   #
   # PlatformDevices
   #
+  gArmVirtWinRtTokenSpaceGuid.PcdPlatformEhciBase|0x090c0000
+  gArmVirtWinRtTokenSpaceGuid.PcdPlatformEhciSize|0x00010000
   gArmVirtWinRtTokenSpaceGuid.PcdPlatformSdHciBase|0x090d0000
   gArmVirtWinRtTokenSpaceGuid.PcdPlatformSdHciSize|0x00010000
   
@@ -315,6 +317,18 @@
   OvmfPkg/VirtioBlkDxe/VirtioBlk.inf
   OvmfPkg/VirtioScsiDxe/VirtioScsi.inf
   OvmfPkg/VirtioNetDxe/VirtioNet.inf
+  
+  #
+  # debuggers for UDK
+  #
+  SourceLevelDebugPkg/DebugAgentDxe/DebugAgentDxe.inf
+  SourceLevelDebugPkg/DebugAgentDxe/DebugAgentPei.inf
+  SourceLevelDebugPkg/Library/DebugAgent/DxeDebugAgentLib.inf
+  SourceLevelDebugPkg/Library/DebugAgent/SecPeiDebugAgentLib.inf
+  SourceLevelDebugPkg/Library/DebugAgent/SmmDebugAgentLib.inf
+  SourceLevelDebugPkg/Library/DebugCommunicationLibSerialPort/DebugCommunicationLibSerialPort.inf
+  SourceLevelDebugPkg/Library/DebugCommunicationLibUsb/DebugCommunicationLibUsb.inf
+  SourceLevelDebugPkg/Library/DebugCommunicationLibUsb3/DebugCommunicationLibUsb3.inf
 
   #
   # FAT filesystem + GPT/MBR partitioning
@@ -371,8 +385,8 @@
   #
   # USB Support
   #
-  # MdeModulePkg/Bus/Pci/UhciDxe/UhciDxe.inf
-  # MdeModulePkg/Bus/Pci/EhciDxe/EhciDxe.inf
+  MdeModulePkg/Bus/Pci/UhciDxe/UhciDxe.inf
+  MdeModulePkg/Bus/Pci/EhciDxe/EhciDxe.inf
   MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe.inf
   MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf
   MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe.inf
@@ -380,11 +394,10 @@
 
   #
   # SD/eMMC Support
-  # disabled for the time being, -hda handles our disk situation relatively well
   #
-  # MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe.inf
-  # MdeModulePkg/Bus/Sd/EmmcDxe/EmmcDxe.inf
-  # MdeModulePkg/Bus/Sd/SdDxe/SdDxe.inf
+  MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe.inf
+  MdeModulePkg/Bus/Sd/EmmcDxe/EmmcDxe.inf
+  MdeModulePkg/Bus/Sd/SdDxe/SdDxe.inf
 
   # NonDiscoverableDevices  
   ArmVirtPkg/VirtWinRtPlatformDxe/VirtWinRtPlatformDxe.inf

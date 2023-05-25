@@ -160,6 +160,12 @@ READ_LOCK_STATUS   = TRUE
   INF OvmfPkg/VirtioBlkDxe/VirtioBlk.inf
   INF OvmfPkg/VirtioNetDxe/VirtioNet.inf
   INF OvmfPkg/VirtioScsiDxe/VirtioScsi.inf
+  
+  #
+  # debuggers
+  #
+  SourceLevelDebugPkg/DebugAgentDxe/DebugAgentDxe.inf
+  SourceLevelDebugPkg/DebugAgentDxe/DebugAgentPei.inf
 
   #
   # UEFI application (Shell Embedded Boot Loader)
@@ -223,6 +229,8 @@ READ_LOCK_STATUS   = TRUE
   #
   # USB Support
   #
+  INF MdeModulePkg/Bus/Pci/UhciDxe/UhciDxe.inf
+  INF MdeModulePkg/Bus/Pci/EhciDxe/EhciDxe.inf
   INF MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe.inf
   INF MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf
   INF MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe.inf
@@ -230,18 +238,17 @@ READ_LOCK_STATUS   = TRUE
 
   #
   # SD/eMMC Support
-  # disabled for the time being, -hda handles our disk situation relatively well
   #
-  # INF MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe.inf
-  # INF MdeModulePkg/Bus/Sd/EmmcDxe/EmmcDxe.inf
-  # INF MdeModulePkg/Bus/Sd/SdDxe/SdDxe.inf
+  INF MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe.inf
+  INF MdeModulePkg/Bus/Sd/EmmcDxe/EmmcDxe.inf
+  INF MdeModulePkg/Bus/Sd/SdDxe/SdDxe.inf
 
   # NonDiscoverableDevices
   INF ArmVirtPkg/VirtWinRtPlatformDxe/VirtWinRtPlatformDxe.inf
   INF MdeModulePkg/Bus/Pci/NonDiscoverablePciDeviceDxe/NonDiscoverablePciDeviceDxe.inf
 
   #
-  # Cat bitmap logo (real)
+  # placeholder EFI bitmap logo
   #
   FILE FREEFORM = PCD(gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdLogoFile) {
     SECTION RAW = MdeModulePkg/Logo/WDPLOGO.bmp
