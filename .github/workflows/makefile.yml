@@ -19,7 +19,7 @@ jobs:
       with:
          python-version: 2.7
     - name: Install gcc
-      run: sudo apt-get install gcc-arm-linux-gnueabihf 
+      run: echo deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse > /etc/apt/sources.list && echo deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse >> /etc/apt/sources.list &&echo deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse >> /etc/apt/sources.list && echo deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse >> /etc/apt/sources.list && sudo apt-get install gcc-arm-linux-gnueabihf 
     - name: step1
       run: make -C BaseTools
     - name: step2
