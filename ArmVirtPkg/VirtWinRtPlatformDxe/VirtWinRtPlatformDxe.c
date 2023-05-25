@@ -22,7 +22,7 @@ InitializeVirtWinRtPlatformDxe (
   IN EFI_SYSTEM_TABLE     *SystemTable
   )
 {
-  EFI_STATUS                     Status;
+  //EFI_STATUS                     Status;
   //UINTN                          EhciSize;
   //VOID*                          EhciBase;
   //UINTN                          SdHciSize;
