@@ -27,5 +27,4 @@ jobs:
       run: export GCC49_ARM_PREFIX=arm-linux-gnueabihf-
 
     - name: step4
-      run: ls
-           ./build -a ARM -t GCC49 -b RELEASE -p ArmVirtPkg/ArmVirtQemuWinRt.dsc
+      run: ls && ./build -a ARM -t GCC49 -b RELEASE -p ArmVirtPkg/ArmVirtQemuWinRt.dsc
