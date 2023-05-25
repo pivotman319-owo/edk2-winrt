@@ -22,7 +22,7 @@ jobs:
       with:
          python-version: 2.7
     - name: step1
-      run: make -C BaseTools
+      run: make -C BaseTools SOURCE_DEBUG_ENABLE=TRUE DEBUG_ON_SERIAL_PORT
     - name: step2
       run: source edksetup.sh
 
