@@ -22,7 +22,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Setup Python2 Env
-      uses: actions/setup-python@v4.6.1
+      uses: LizardByte/setup-python-action@master
       with:
          python-version: 2.7
          
